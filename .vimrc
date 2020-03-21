@@ -17,35 +17,46 @@ set shiftwidth=4
 set smarttab
 set cin
 
-
 "MAPS
-inoremap {<CR> {<CR>}<ESC>O
+let mapleader = ","
+let maplocalleader = " "
 
+inoremap {<CR> {<CR>}<ESC>O
 
 nnoremap ; :
 "nnoremap : ;
 
+nmap <F8> :TagbarToggle<CR>
 
 "SNIPPETS
-nnoremap ,cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
-nnoremap ,pybt :-1read ~/.vim/.pybot.py<CR>10jf(a
+nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
+nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(a
 
 "PLUGINS
 call plug#begin('~/.vim/plugged')
 
-Plug 'davidhalter/jedi-vim'
 "Plug 'scrooloose/nerdtree'
 Plug 'xavierd/clang_complete'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-bufferline'
+Plug 'davidhalter/jedi-vim'
+
+Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'edkolev/tmuxline.vim'
 
 "Plug 'AlessandroYorba/Alduin'
 Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+Plug 'bling/vim-bufferline'
+
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/SyntaxRange'
+Plug 'majutsushi/tagbar'
+Plug 'mattn/calendar-vim'
+Plug 'vim-scripts/NrrwRgn'
 
 call plug#end()
 
