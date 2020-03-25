@@ -47,7 +47,7 @@ font-2 = Weather\Icons:pixelsize=9;2
 font-3 = siji:pixelsize=10;2
 
 modules-left = bspwm
-modules-right = filesystem fshome battery xkeyboard volume wlan date
+modules-right = filesystem fshome battery xkeyboard volume wlan cpu memory date
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -57,6 +57,20 @@ module-margin-right = 2
 
 tray-position = right
 tray-padding = 2
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-padding = 2
+label = %percentage:2%%
+format-background = #47474b
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
@@ -74,14 +88,11 @@ adapter = AC0
 full-at = 95
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
