@@ -87,7 +87,7 @@ font:
   # The italic font face
   italic:
     family: "Source Code Pro"
-    # style: "Medium Italic"
+    style: "Medium Italic"
 
   # Point size of the font
   size: 10.0
