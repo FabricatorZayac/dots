@@ -52,8 +52,8 @@ modules-right = filesystem fshome battery xkeyboard volume wlan cpu memory date
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
-module-margin-left = 1
-module-margin-right = 2
+; module-margin-left = 1
+; module-margin-right = 2
 
 tray-position = right
 tray-padding = 2
@@ -70,6 +70,7 @@ format-background = #47474b
 type = internal/memory
 interval = 2
 format-prefix = " "
+format-padding = 2
 label = %percentage_used%%
 
 [module/wlan]
@@ -78,6 +79,7 @@ interface = wlp3s0f0
 interval = 3.0
 
 format-connected = <label-connected>
+format-connected-padding = 2
 
 label-connected =  %essid%
 
@@ -119,7 +121,9 @@ mount-0 = /home
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
-format-padding = 3
+format-padding = 2
+format-mounted-padding = 2
+format-unmounted-padding = 2
 
 [module/filesystem]
 type = internal/fs
@@ -130,6 +134,9 @@ mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+format-mounted-padding = 2
+format-unmounted-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
