@@ -36,7 +36,8 @@ nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(a
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'xavierd/clang_complete'
+" Plug 'xavierd/clang_complete'
+Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
 
 Plug 'tpope/vim-speeddating'

@@ -5,7 +5,8 @@ sxhkd &
 sudo illum-d &
 compton &
 polybarstart &
-feh --bg-scale ~/pix/wallpapers/flcl/206717.jpg
+feh --bg-scale ~/pix/wallpapers/flcl/206717.jpg &
+wmname LG3D &
 
 bspc monitor -d term mpd browser games books VI VII
 
@@ -24,4 +25,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Surf state=tiled
 bspc rule -a Emacs state=tiled
-bspc rule -a Zathura desktop='^5' state=tiled
+bspc rule -a Zathura state=tiled
