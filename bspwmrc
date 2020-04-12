@@ -7,15 +7,13 @@ compton &
 polybarstart &
 feh --bg-scale ~/pix/wallpapers/flcl/206717.jpg &
 wmname LG3D &
-setxkbmap -option caps:none
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 bspc monitor -d term mpd browser games books VI VII
 
 bspc config border_width         1
 bspc config window_gap          10
 
-bspc config split_ratio          0.54
+bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config top_padding 25
