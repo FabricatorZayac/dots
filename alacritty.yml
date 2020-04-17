@@ -62,8 +62,11 @@ scrolling:
   # scrollback is enabled (history > 0).
   multiplier: 3
 
+# <<<<<<< HEAD
   # Scroll to the bottom when new text is written to the terminal.
 
+# =======
+# >>>>>>> 8ed4033
 # Display tabs using this many cells (changes require restart)
 #
 # Some applications, like Emacs, rely on knowing about the width of a tab. To
