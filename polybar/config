@@ -42,12 +42,14 @@ border-top-size = 0
 border-color = #00000000
 
 font-0 = Cantarell:pixelsize=9;2
-font-1 = FontAwesome:pixelsize=9;2
-font-2 = Weather\Icons:pixelsize=9;2
-font-3 = siji:pixelsize=10;2
+font-1 = Weather\Icons:pixelsize=9;2
+font-2 = siji:pixelsize=10;2
+font-3 = Font Awesome 5 Free:pixelsize=10;3
+font-4 = Font Awesome 5 Free Solid:pixelsize=10;3
+font-5 = Font Awesome 5 Brands:pixelsize=10;3
 
 modules-left = bspwm
-modules-right = filesystem fshome battery xkeyboard volume wlan cpu memory date
+modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory date
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -83,6 +85,16 @@ format-connected-padding = 2
 
 label-connected =  %essid%
 
+[module/eth]
+type = internal/network
+interface = enp37s0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-padding = 2
+
+label-connected =  %local_ip%
+
 [module/battery]
 type = internal/battery
 battery = BAT0
@@ -116,7 +128,7 @@ animation-charging-framerate = 750
 type = internal/fs
 interval = 25
 
-mount-0 = /home
+mount-0 = /home/zayac/hdd
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -160,6 +172,7 @@ type = internal/bspwm
 
 ws-icon-0 = term;
 ws-icon-1 = mpd;
+; ws-icon-1 = mpd;telegram
 ws-icon-2 = browser;
 ws-icon-3 = games;
 ws-icon-4 = books;

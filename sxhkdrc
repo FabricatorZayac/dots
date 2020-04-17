@@ -19,19 +19,21 @@ Print
 	scrot
 
 # audio
-XF86Audio{Raise,Lower}Volume
+super + {F8, F7}
     amixer -D pulse sset Master {5%+,5%-} unmute
 
-XF86AudioMute
+super + F9
 	amixer -D pulse sset Master toggle
 
 #
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + alt + F4
+	bspc quit
+# restart bspwm
+super + alt + r
+	bspc wm -r
 
 # close and kill
 super + {_,shift + }q

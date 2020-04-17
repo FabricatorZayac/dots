@@ -63,7 +63,6 @@ scrolling:
   multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: true
 
 # Display tabs using this many cells (changes require restart)
 #
@@ -71,7 +70,6 @@ scrolling:
 # prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
 #
-tabspaces: 4
 
 # Font configuration (changes require restart)
 font:
