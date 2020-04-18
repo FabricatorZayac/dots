@@ -14,12 +14,12 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 bspc monitor -d term mpd browser games books VI VII
 
 bspc config border_width         2
-bspc config window_gap          12
+bspc config window_gap           4
 
 bspc config split_ratio          0.54
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config top_padding 25
+bspc config top_padding			 25
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^3'
