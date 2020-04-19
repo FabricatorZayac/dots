@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+#Web browser
+super + backslash
+	chromium
+
 # program launcher
 super + d
 	dmenu_run -fn 'Cantarell-11'
