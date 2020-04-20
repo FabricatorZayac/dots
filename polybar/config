@@ -44,6 +44,7 @@ border-color = #00000000
 font-0 = Cantarell:pixelsize=9;2
 font-1 = FontAwesome:style=Solid:pixelsize=9;2
 font-2 = Weather\Icons:pixelsize=9;2
+font-3 = Font Awesome 5 Brands:pixelsize=10;3
 
 modules-left = bspwm
 modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory date
