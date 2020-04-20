@@ -1,4 +1,4 @@
-;==========================================================
+==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -42,11 +42,8 @@ border-top-size = 0
 border-color = #00000000
 
 font-0 = Cantarell:pixelsize=9;2
-font-1 = Weather\Icons:pixelsize=9;2
-font-2 = siji:pixelsize=10;2
-font-3 = Font Awesome 5 Free:pixelsize=10;3
-font-4 = Font Awesome 5 Free Solid:pixelsize=10;3
-font-5 = Font Awesome 5 Brands:pixelsize=10;3
+font-1 = FontAwesome:style=Solid:pixelsize=9;2
+font-2 = Weather\Icons:pixelsize=9;2
 
 modules-left = bspwm
 modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory date

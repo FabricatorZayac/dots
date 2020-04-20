@@ -30,7 +30,8 @@ nmap <F8> :TagbarToggle<CR>
 
 "SNIPPETS
 nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
-nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(a
+nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(
+nnoremap <leader>java :-1read ~/.vim/.skeleton.main.java<CR>4j$
 
 "PLUGINS
 call plug#begin('~/.vim/plugged')
@@ -39,6 +40,7 @@ Plug 'scrooloose/nerdtree'
 " Plug 'xavierd/clang_complete'
 Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
+Plug 'artur-shaik/vim-javacomplete2'
 
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-commentary'
@@ -60,6 +62,44 @@ Plug 'mattn/calendar-vim'
 Plug 'vim-scripts/NrrwRgn'
 
 call plug#end()
+
+"Java things
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+
+nmap <leader>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+
+imap <C-j>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+
+nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)
+nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+nmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+nmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+nmap <leader>jts <Plug>(JavaComplete-Generate-ToString)
+nmap <leader>jeq <Plug>(JavaComplete-Generate-EqualsAndHashCode)
+nmap <leader>jc <Plug>(JavaComplete-Generate-Constructor)
+nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)
+
+imap <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
+imap <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
+imap <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+
+vmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+vmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+
+nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)
+nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)
+
+let g:JavaComplete_EnableDefaultMappings = 0
 
 "COLORS
 colorscheme gruvbox
