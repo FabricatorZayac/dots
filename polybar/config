@@ -145,9 +145,9 @@ type = internal/bspwm
 ws-icon-0 = term;
 ws-icon-1 = mpd;
 ; ws-icon-1 = mpd;telegram
-ws-icon-2 = browser;
+ws-icon-2 = browser;
 ws-icon-3 = games;
-ws-icon-4 = books;
+; ws-icon-4 = books;
 ws-icon-default =  
 
 label-focused = %icon%
