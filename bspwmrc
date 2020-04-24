@@ -8,8 +8,9 @@ polybarstart &
 feh --bg-scale ~/pix/wallpapers/JR8npKV.jpg &
 setxkbmap -layout us,ru -option grp:alt_shift_toggle &
 wmname LG3D &
-setxkbmap -option caps:none
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+setxkbmap -option caps:none &
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
+syncthing &
 
 bspc monitor -d term mpd browser games books VI VII
 
