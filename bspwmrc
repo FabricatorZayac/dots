@@ -7,8 +7,9 @@ compton &
 polybarstart &
 feh --bg-scale ~/pix/wallpapers/flcl/206717.jpg &
 wmname LG3D &
-setxkbmap -option caps:none
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+setxkbmap -option caps:none &
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
+syncthing &
 
 bspc monitor -d term mpd browser games books VI VII
 
