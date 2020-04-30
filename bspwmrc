@@ -12,7 +12,7 @@ setxkbmap -option caps:none
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' 
 syncthing -no-browser &
 
-bspc monitor -d term mpd browser games books VI VII
+bspc monitor -d term mpd browser games V VI VII VIII
 
 bspc config border_width         2
 bspc config window_gap           4
