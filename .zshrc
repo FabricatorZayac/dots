@@ -8,7 +8,7 @@ bindkey -v
 
 # <<<<<<< HEAD
 alias l="ls -l"
-alias la="ls -la"
+alias la="ls -lA"
 
 # =======
 # >>>>>>> 8ed4033
