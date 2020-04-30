@@ -30,7 +30,7 @@ XF86AudioMute
 
 # Shutdown
 ctrl + super + shift + F4
-	shutdown now
+	~/dox/dots/dmenu/dmenu_shutdown
 
 #
 # bspwm hotkeys
