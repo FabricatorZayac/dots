@@ -40,6 +40,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
 Plug 'kmyk/brainfuck-highlight.vim'
+Plug 'cespare/vim-toml'
 
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-commentary'
