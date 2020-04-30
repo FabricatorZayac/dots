@@ -25,17 +25,29 @@ Print
 # audio
 XF86Audio{Raise,Lower}Volume
     amixer -D pulse sset Master {5%+,5%-} unmute
-
 XF86AudioMute
 	amixer -D pulse sset Master toggle
+
+# Shutdown
+ctrl + super + shift + F4
+	shutdown now
 
 #
 # bspwm hotkeys
 #
 
+<<<<<<< HEAD
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
+=======
+# quit bspwm
+super + alt + F4
+	bspc quit
+# restart bspwm
+super + shift + r
+	bspc wm -r
+>>>>>>> 3b9dcda... Added shutdown hotkey
 
 # close and kill
 super + {_,shift + }q
