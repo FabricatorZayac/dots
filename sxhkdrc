@@ -25,18 +25,22 @@ Print
 # audio
 super + {F8, F7}
     amixer -D pulse sset Master {5%+,5%-} unmute
-
 super + F9
 	amixer -D pulse sset Master toggle
+
+# Shutdown
+ctrl + super + shift + F4
+	shutdown now
 
 #
 # bspwm hotkeys
 #
 
+# quit bspwm
 super + alt + F4
 	bspc quit
 # restart bspwm
-super + alt + r
+super + shift + r
 	bspc wm -r
 
 # close and kill
