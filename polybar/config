@@ -41,11 +41,11 @@ border-size = 0
 border-top-size = 0
 border-color = #00000000
 
-font-0 = Cantarell:pixelsize=9;3
+font-0 = Cantarell:pixelsize=10;3
 font-1 = FontAwesome:style=Regular:pixelsize=10;3
-font-2 = Font Awesome 5 Brands:pixelsize=10;3
+font-2 = Font Awesome 5 Brands:pixelsize=11;3
 font-3 = Font Awesome 5 Free Regular:pixelsize=10;3
-font-4 = Font Awesome 5 Free Solid:style=Solid:pixelsize:11;3
+font-4 = Font Awesome 5 Free Solid:style=Solid:pixelsize:10;3
 
 modules-left = bspwm
 modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory temp date
@@ -70,7 +70,7 @@ format-background = #47474b
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-padding = 2
 label = %percentage_used%%
 
@@ -174,7 +174,6 @@ ws-icon-0 = term;
 ws-icon-1 = mpd;
 ws-icon-2 = browser;
 ws-icon-3 = games;
-; ws-icon-4 = books;
 ws-icon-default =  
 
 label-focused = %icon%
@@ -247,7 +246,7 @@ format-volume-padding = 3
 format-muted-padding = 3
 format-muted-background = #444448
 
-;format-muted-prefix = "──── %{F-}x "
+; format-muted-prefix = "──── %{F-}x "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = " x"
 
