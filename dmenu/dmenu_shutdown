@@ -1,2 +1,2 @@
-#!/bin/sh
-echo "shutdown now\nreboot" | dmenu | sh
+#!/bin/bash
+echo -e "shutdown now\nreboot" | dmenu | sh
