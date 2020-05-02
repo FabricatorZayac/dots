@@ -143,7 +143,7 @@ type = internal/bspwm
 
 ws-icon-0 = term;
 ws-icon-1 = mpd;
-ws-icon-2 = browser;
+ws-icon-2 = browser;
 ws-icon-3 = games;
 ws-icon-default =  
 
