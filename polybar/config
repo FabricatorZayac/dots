@@ -42,13 +42,13 @@ border-top-size = 0
 border-color = #00000000
 
 font-0 = Cantarell:pixelsize=10;3
-font-1 = FontAwesome:style=Regular:pixelsize=10;3
+font-1 = FontAwesome:style=Regular:pixelsize=11;3
 font-2 = Font Awesome 5 Brands:pixelsize=11;3
 font-3 = Font Awesome 5 Free Regular:pixelsize=10;3
-font-4 = Font Awesome 5 Free Solid:style=Solid:pixelsize:10;3
+font-4 = Font Awesome 5 Free Solid:style=Solid:pixelsize:1;3
 
 modules-left = bspwm
-modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory date
+modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory temp date
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -225,7 +225,6 @@ label-muted = " x"
 ramp-volume-0 =
 ramp-volume-1 =
 ramp-volume-2 =
-ramp-volume-3 =
 
 bar-volume-width = 11
 bar-volume-foreground-0 = #dfdfdf
@@ -245,4 +244,31 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+[module/temp]
+type = internal/temperature
+
+format-padding = 3
+format-background = #444448
+
+; Path to sensor
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input
+
+base-temperature = 20
+warn-temperature = 80
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+
+label = %temperature-c%
+
+label-warn = %temperature-c%
+label-warn-foreground = #f00
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+; ramp-foreground = #55
 
