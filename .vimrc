@@ -3,6 +3,7 @@ syntax enable
 filetype plugin on
 set relativenumber number
 set incsearch
+set omnifunc=syntaxcomplete#Complete
 
 set encoding=utf-8
 set path+=**
@@ -24,7 +25,6 @@ let maplocalleader = " "
 inoremap {<CR> {<CR>}<ESC>O
 
 nnoremap ; :
-"nnoremap : ;
 
 nmap <F8> :TagbarToggle<CR>
 
@@ -36,26 +36,31 @@ nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-" Plug 'xavierd/clang_complete'
-Plug 'justmao945/vim-clang'
-Plug 'davidhalter/jedi-vim'
+" Plug 'davidhalter/jedi-vim'
+Plug 'ycm-core/YouCompleteMe'
+
+"SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
 Plug 'cespare/vim-toml'
 
+"tpope plugins
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
+"COLORSCHEMES
 "Plug 'AlessandroYorba/Alduin'
 Plug 'morhetz/gruvbox'
 
+"POWERLINE
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'bling/vim-bufferline'
 
+"ORGMODE
 Plug 'jceb/vim-orgmode'
-Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/SyntaxRange'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/calendar-vim'
