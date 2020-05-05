@@ -3,12 +3,12 @@
 #AUTOSTART
 sxhkd &
 sudo illum-d &
-compton &
+picom &
 polybarstart &
 feh --bg-scale ~/pix/wallpapers/flcl/206717.jpg &
 wmname LG3D &
-setxkbmap -option caps:none 
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' 
+setxkbmap -option caps:none
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 syncthing -no-browser &
 
 bspc monitor -d term mpd browser games V VI VII VIII
@@ -27,5 +27,5 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Surf state=tiled
-bspc rule -a Emacs state=tiled
+bspc rule -a Emacs state=tiled desktop='^8'
 bspc rule -a Zathura state=tiled
