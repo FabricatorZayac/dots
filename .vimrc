@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 " Plug 'davidhalter/jedi-vim'
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
