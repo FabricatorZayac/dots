@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "poweroff\nreboot" | dmenu | sh
+echo -e "poweroff\nreboot" | dmenu -fn 'Cantarell-11' -c -l 2 -bw 2 | sh
