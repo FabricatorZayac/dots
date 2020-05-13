@@ -283,7 +283,7 @@ format-padding = 3
 format-background = #444448
 
 ; Path to sensor
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+hwmon-path = /sys/class/hwmon/hwmon3/temp1_input
 
 base-temperature = 20
 warn-temperature = 80
