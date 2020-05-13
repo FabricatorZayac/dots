@@ -52,6 +52,7 @@ Plug 'tpope/vim-repeat'
 "COLORSCHEMES
 "Plug 'AlessandroYorba/Alduin'
 Plug 'morhetz/gruvbox'
+Plug 'fxn/vim-monochrome'
 
 "POWERLINE
 Plug 'vim-airline/vim-airline'
