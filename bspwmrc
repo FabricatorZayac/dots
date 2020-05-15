@@ -11,6 +11,7 @@ wmname LG3D &
 setxkbmap -option caps:none 
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' 
 syncthing -no-browser &
+xsetroot -cursor_name left_ptr &
 
 bspc monitor -d term mpd browser games V VI VII VIII
 
