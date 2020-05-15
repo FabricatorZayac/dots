@@ -1,5 +1,8 @@
 export TERM="xterm-256color"
 export PATH_TO_FX=path/to/javafx-sdk-14/lib
+export WINEPREFIX=~/hdd/.wine
+
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
