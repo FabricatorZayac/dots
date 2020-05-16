@@ -15,6 +15,7 @@ then
 	if [ ! -e ~/.config ];
 	then
 		mkdir ~/.config
+	fi
 
 	rm -r ~/.config/polybar
 	ln -s $DIR/polybar ~/.config/polybar
@@ -24,6 +25,7 @@ then
 		mkdir ~/.config/alacritty
 	else
 		rm ~/.config/alacritty/alacritty.yml
+	fi
 	ln -s $DIR/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 	if [ ! -e ~/.config/bspwm ];
@@ -31,6 +33,7 @@ then
 		mkdir ~/.config/bspwm
 	else
 		rm ~/.config/bspwm/bspwmrc
+	fi
 	ln -s $DIR/bspwmrc ~/.config/bspwm/bspwmrc
 
 	if [ ! -e ~/.config/sxhkd ];
@@ -38,6 +41,7 @@ then
 		mkdir ~/.config/sxhkd
 	else
 		rm ~/.config/sxhkd/sxhkdrc
+	fi
 	ln -s $DIR/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
 	echo This is needed for polybar to start
