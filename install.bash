@@ -17,6 +17,11 @@ then
 		mkdir ~/.config
 	fi
 
+	rm ~/.config/mimeapps.list
+	ln -s $DIR/mimeapps.list ~/.config/mimeapps.list
+	rm ~/.local/share/applications/zathura.desktop
+	ln -s $DIR/desktopEntries/zathura.desktop ~/.local/share/applications/zathura.desktop
+
 	rm -r ~/.config/polybar
 	ln -s $DIR/polybar ~/.config/polybar
 
