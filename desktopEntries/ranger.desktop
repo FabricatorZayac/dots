@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Ranger
+Exec=alacritty -e /usr/bin/ranger %f
+Terminal=true
+StartupNotify=false
+Type=Application
+MimeType=inode/directory
