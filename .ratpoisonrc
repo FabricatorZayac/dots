@@ -1,0 +1,40 @@
+startup_message off
+#binds
+escape s-space
+
+unbind Return
+unbind C-Return
+
+bind s-r restart
+bind Return exec alacritty
+
+bind k focusup
+bind j focusdown
+bind h focusleft
+bind l focusright
+
+bind s vsplit
+bind v hsplit
+bind r resize
+bind Escape delete
+
+bind D dedicate
+
+definekey top s-p prev
+definekey top s-n next
+definekey top Print exec scrot
+
+#autostart
+exec picom
+exec sudo illum-d
+exec feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg
+exec syncthing -no-browser
+exec xsetroot -cursor_name left_ptr
+
+exec polybarstart
+
+#sets
+set font Cantarell-11
+set padding 0 25 0 0
+
+exec ratpoison -c "banish"
