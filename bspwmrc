@@ -5,8 +5,7 @@ sxhkd &
 sudo illum-d &
 picom &
 polybarstart &
-feh --bg-scale ~/pix/wallpapers/JR8npKV.jpg &
-setxkbmap -layout us,ru -option grp:alt_shift_toggle &
+feh --bg-scale ~/pix/wallpapers/monogatari/JR8npKV.jpg &
 wmname LG3D &
 syncthing -no-browser &
 xsetroot -cursor_name left_ptr &
