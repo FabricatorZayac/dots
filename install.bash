@@ -7,10 +7,29 @@ then
 	DIR=$(pwd)
 	echo $DIR
 
-	rm ~/.tmux.conf
+	if [-e ~/.tmux.conf]
+	then
+		rm ~/.tmux.conf
+	fi
 	ln -s $DIR/.tmux.conf ~/.tmux.conf
-	rm ~/.vimrc
+
+	if [-e ~/.tmux.conf]
+	then
+		rm ~/.vimrc
+	fi
 	ln -s $DIR/.vimrc ~/.vimrc
+
+	if [-e ~/.Xmodmap]
+	then
+		rm ~/.Xmodmap
+	fi
+	ln -s $DIR/.Xmodmap ~/.Xmodmap
+
+	if [-e ~/.xinitrc]
+	then
+		rm ~/.xinitrc
+	fi
+	ln -s $DIR/.xinitrc ~/.xinitrc
 
 	if [ ! -e ~/.config ];
 	then
