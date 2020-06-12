@@ -1,7 +1,7 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
-xmodmap ~/.Xmodmap
+setxkbmap -option caps:escape
 
 #exec bspwm
 exec ratpoison
