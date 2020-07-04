@@ -9,12 +9,10 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
-# <<<<<<< HEAD
-alias l="ls -l"
-alias la="ls -lA"
+alias ls="ls --color=auto"
+alias l="ls -lh --color=auto"
+alias la="ls -lA --color=auto"
 
-# =======
-# >>>>>>> 8ed4033
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/zayac/.zshrc'
