@@ -1,3 +1,5 @@
+#ZayacTheEngineer ratpoison config [WIP]
+
 startup_message off
 #binds
 escape s-space
@@ -29,8 +31,6 @@ unbind Return
 unbind C-Return
 
 bind s-r restart
-bind Return exec alacritty
-bind d exec dmenu_run
 
 bind k focusup
 bind j focusdown
@@ -47,6 +47,8 @@ bind D dedicate
 definekey top s-p prev
 definekey top s-n next
 definekey top Print exec scrot
+definekey top s-Return exec alacritty
+definekey top s-d exec dmenu_run
 
 #autostart
 exec picom
