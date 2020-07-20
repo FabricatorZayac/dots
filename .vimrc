@@ -16,7 +16,7 @@ set nowrap
 set tabstop=4
 set shiftwidth=4
 set smarttab
-set cin
+set cindent
 
 "MAPS
 let mapleader = ","
@@ -42,6 +42,7 @@ Plug 'scrooloose/nerdtree'
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
 Plug 'cespare/vim-toml'
+Plug 'justinmk/vim-syntax-extra'
 
 "tpope plugins
 Plug 'tpope/vim-speeddating'
@@ -73,6 +74,7 @@ set bg=dark
 hi Normal ctermbg=NONE
 
 "VARS
+let $PAGER=''
 let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
 
