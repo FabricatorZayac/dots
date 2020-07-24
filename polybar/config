@@ -76,6 +76,7 @@ label = %percentage_used%%
 
 [module/eth]
 type = internal/network
+;need to change interface according to ifconfig
 interface = enp2s0f1
 interval = 3.0
 
@@ -86,6 +87,7 @@ label-connected = %local_ip%
 
 [module/wlan]
 type = internal/network
+;need to change interface according to ifconfig
 interface = wlp3s0f0
 interval = 3.0
 
