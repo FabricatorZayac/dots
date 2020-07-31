@@ -32,7 +32,7 @@ XF86AudioMute
 
 # brightness
 XF86MonBrightness{Up,Down}
-	sudo light -{A,U} 5
+	sudo light -{A,U} 2
 
 # Shutdown
 XF86PowerOff
