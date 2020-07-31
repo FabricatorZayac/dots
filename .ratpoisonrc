@@ -1,0 +1,80 @@
+#ZayacTheEngineer ratpoison config [WIP]
+
+startup_message off
+#binds
+escape s-space
+exec /usr/bin/rpws init 6 -k
+
+unbind a
+unbind C-a
+unbind C-A
+unbind C-b
+unbind c
+unbind C-c
+unbind C-f
+unbind C-i
+unbind C-K
+unbind C-p
+unbind C-m
+unbind C-n
+unbind C-r
+unbind C-s
+unbind S
+unbind C-S
+unbind C-u
+unbind C-V
+unbind C-w
+unbind C-x
+unbind exclam
+unbind C-exclam
+unbind C-apostrophe
+unbind Return
+unbind C-Return
+unbind Escape
+
+bind s-r restart
+
+bind q delete
+bind k focusup
+bind j focusdown
+bind h focusleft
+bind l focusright
+bind J exchangedown
+bind H exchangeleft
+bind K exchangeup
+bind L exchangeright
+
+bind s vsplit
+bind v hsplit
+bind r resize
+bind Escape delete
+
+bind 1 exec rpws 1
+bind 2 exec rpws 2
+bind 3 exec rpws 3
+bind 4 exec rpws 4
+bind 5 exec rpws 5
+bind 6 exec rpws 6
+
+bind D dedicate
+
+definekey top s-p prev
+definekey top s-c next
+definekey top Print exec scrot
+definekey top s-Return exec alacritty
+definekey top s-d exec dmenu_run
+
+#autostart
+exec picom
+exec sudo illum-d
+exec feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg
+exec syncthing -no-browser
+exec xsetroot -cursor_name left_ptr
+
+exec polybarstart
+
+#sets
+set font Cantarell-11
+set padding 0 25 0 0
+
+exec ratpoison -c "banish"
