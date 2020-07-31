@@ -2,7 +2,6 @@
 
 #AUTOSTART
 sxhkd &
-sudo illum-d &
 picom &
 polybarstart &
 # feh --bg-fill ~/pix/wallpapers/flcl/206717.jpg &

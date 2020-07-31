@@ -30,6 +30,10 @@ XF86Audio{Raise,Lower}Volume
 XF86AudioMute
 	amixer -D pulse sset Master toggle
 
+# brightness
+XF86MonBrightness{Up,Down}
+	sudo light -{A,U} 5
+
 # Shutdown
 XF86PowerOff
 	~/dox/dots/dmenu/dmenu_shutdown
