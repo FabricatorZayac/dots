@@ -1,10 +1,5 @@
 export TERM=xterm-256color
-export VISUAL=vim
-export PATH_TO_FX=path/to/javafx-sdk-14/lib
-# export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
-#     vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
-#     -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
-#     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+export EDITOR=vim
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
