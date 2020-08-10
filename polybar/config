@@ -76,8 +76,10 @@ label = %percentage_used%%
 
 [module/eth]
 type = internal/network
-interface = enp2s0f1
+interface = enp0s25
 interval = 3.0
+
+format-connected-padding = 2
 
 format-connected-underline = #55aa55
 format-connected-prefix = " "
@@ -86,7 +88,7 @@ label-connected = %local_ip%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0f0
+interface = wlp3s0
 interval = 3.0
 
 format-connected = <label-connected>
@@ -252,7 +254,7 @@ format-padding = 2
 format-background = #444448
 
 ; Path to sensor
-hwmon-path = /sys/class/hwmon/hwmon3/temp1_input
+hwmon-path = /sys/class/hwmon/hwmon0/temp1_input
 
 base-temperature = 20
 warn-temperature = 80
