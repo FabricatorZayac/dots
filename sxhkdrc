@@ -38,6 +38,10 @@ XF86MonBrightness{Up,Down}
 XF86PowerOff
 	~/dox/dots/dmenu/dmenu_shutdown
 
+# Network
+XF86WLAN
+	~/dox/dots/dmenu/dmenu_network
+
 #
 # bspwm hotkeys
 #

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+netctl list | cut -b 3- | dmenu -fn 'Cantarell-14' -c -l 7 -bw 2 | ifne xargs sudo -A netctl switch-to
