@@ -7,66 +7,66 @@ then
 	DIR=$(pwd)
 	echo $DIR
 
-	if [-e ~/.tmux.conf]
+	if [-e $HOME/.tmux.conf]
 	then
-		rm ~/.tmux.conf
+		rm $HOME/.tmux.conf
 	fi
-	ln -s $DIR/.tmux.conf ~/.tmux.conf
+	ln -s $DIR/.tmux.conf $HOME/.tmux.conf
 
-	if [-e ~/.tmux.conf]
+	if [-e $HOME/.tmux.conf]
 	then
-		rm ~/.vimrc
+		rm $HOME/.vimrc
 	fi
-	ln -s $DIR/.vimrc ~/.vimrc
+	ln -s $DIR/.vimrc $HOME/.vimrc
 
-	if [-e ~/.Xmodmap]
+	if [-e $HOME/.Xmodmap]
 	then
-		rm ~/.Xmodmap
+		rm $HOME/.Xmodmap
 	fi
-	ln -s $DIR/.Xmodmap ~/.Xmodmap
+	ln -s $DIR/.Xmodmap $HOME/.Xmodmap
 
-	if [-e ~/.xinitrc]
+	if [-e $HOME/.xinitrc]
 	then
-		rm ~/.xinitrc
+		rm $HOME/.xinitrc
 	fi
-	ln -s $DIR/.xinitrc ~/.xinitrc
+	ln -s $DIR/.xinitrc $HOME/.xinitrc
 
-	if [ ! -e ~/.config ];
+	if [ ! -e $HOME/.config ];
 	then
-		mkdir ~/.config
+		mkdir $HOME/.config
 	fi
 
-	rm ~/.config/mimeapps.list
-	ln -s $DIR/mimeapps.list ~/.config/mimeapps.list
-	rm ~/.local/share/applications/zathura.desktop
-	ln -s $DIR/desktopEntries/zathura.desktop ~/.local/share/applications/zathura.desktop
+	rm $HOME/.config/mimeapps.list
+	ln -s $DIR/mimeapps.list $HOME/.config/mimeapps.list
+	rm $HOME/.local/share/applications/zathura.desktop
+	ln -s $DIR/desktopEntries/zathura.desktop $HOME/.local/share/applications/zathura.desktop
 
-	rm -r ~/.config/polybar
-	ln -s $DIR/polybar ~/.config/polybar
+	rm -r $HOME/.config/polybar
+	ln -s $DIR/polybar $HOME/.config/polybar
 
-	if [ ! -e ~/.config/alacritty ];
+	if [ ! -e $HOME/.config/alacritty ];
 	then
-		mkdir ~/.config/alacritty
+		mkdir $HOME/.config/alacritty
 	else
-		rm ~/.config/alacritty/alacritty.yml
+		rm $HOME/.config/alacritty/alacritty.yml
 	fi
-	ln -s $DIR/alacritty.yml ~/.config/alacritty/alacritty.yml
+	ln -s $DIR/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
-	if [ ! -e ~/.config/bspwm ];
+	if [ ! -e $HOME/.config/bspwm ];
 	then
-		mkdir ~/.config/bspwm
+		mkdir $HOME/.config/bspwm
 	else
-		rm ~/.config/bspwm/bspwmrc
+		rm $HOME/.config/bspwm/bspwmrc
 	fi
-	ln -s $DIR/bspwmrc ~/.config/bspwm/bspwmrc
+	ln -s $DIR/bspwmrc $HOME/.config/bspwm/bspwmrc
 
-	if [ ! -e ~/.config/sxhkd ];
+	if [ ! -e $HOME/.config/sxhkd ];
 	then
-		mkdir ~/.config/sxhkd
+		mkdir $HOME/.config/sxhkd
 	else
-		rm ~/.config/sxhkd/sxhkdrc
+		rm $HOME/.config/sxhkd/sxhkdrc
 	fi
-	ln -s $DIR/sxhkdrc ~/.config/sxhkd/sxhkdrc
+	ln -s $DIR/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 
 	echo This is needed for polybar to start
 	sudo cp $DIR/polybar/polybarstart /bin/polybarstart
