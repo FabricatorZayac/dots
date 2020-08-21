@@ -36,8 +36,7 @@ nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-" Plug 'davidhalter/jedi-vim'
-" Plug 'ycm-core/YouCompleteMe'
+Plug 'k-cybulski/vim-commonmark-preview'
 
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
