@@ -5,7 +5,8 @@ sxhkd &
 sudo illum-d &
 picom &
 polybarstart &
-feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg &
+# feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg &
+feh --bg-fill ~/pix/wallpapers/wp2931013.jpg
 wmname LG3D &
 syncthing -no-browser &
 xsetroot -cursor_name left_ptr &
