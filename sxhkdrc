@@ -8,9 +8,9 @@ super + Return
 
 #Web browser
 super + backslash
-	chromium
+	firefox
 super + shift + backslash
-	chromium --incognito
+	firefox --private-window
 
 # program launcher
 super + d
