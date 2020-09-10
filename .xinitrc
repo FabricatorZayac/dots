@@ -5,3 +5,4 @@ setxkbmap -option caps:escape
 
 exec bspwm
 #exec ratpoison
+#exec dwm
