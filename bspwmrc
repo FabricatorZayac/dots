@@ -2,15 +2,8 @@
 
 #AUTOSTART
 sxhkd &
-picom &
 polybarstart &
-# feh --bg-fill ~/pix/wallpapers/flcl/206717.jpg &
-# feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg
-feh --bg-fill ~/pix/wallpapers/gojira-from-mars-to-sirius.jpeg
 wmname LG3D &
-syncthing -no-browser &
-setxkbmap us,ru -option grp:alt_shift_toggle
-xsetroot -cursor_name left_ptr &
 
 bspc monitor -d term mpd browser games V VI VII VIII
 
