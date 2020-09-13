@@ -51,6 +51,7 @@ Plug 'tpope/vim-repeat'
 
 "COLORSCHEMES
 Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 
 "POWERLINE
 Plug 'vim-airline/vim-airline'
@@ -68,13 +69,16 @@ Plug 'vim-scripts/NrrwRgn'
 call plug#end()
 
 "COLORS
+" colorscheme PaperColor
+" let g:airline_theme='papercolor'
+
 colorscheme gruvbox
 set bg=dark
 hi Normal ctermbg=NONE
+let g:airline_theme='badwolf'
 
 "VARS
 let $PAGER=''
 let g:airline_powerline_fonts = 1
-let g:airline_theme='badwolf'
 
 command! MakeTags !ctags -R
