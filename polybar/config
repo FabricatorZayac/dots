@@ -197,7 +197,7 @@ label-empty-padding = 3
 
 [module/dwm]
 type = internal/dwm
-format = <label-tags>
+format = <label-tags> <label-layout>
 
 enable-tags-click = true
 enable-layout-click = true
@@ -206,9 +206,6 @@ layout-scroll-wrap = true
 layout-scroll-reverse = false
 ; If enable-layout-click = true, clicking the layout symbol will switch to this layout
 secondary-layout-symbol = [M]
-
-; Separator in between shown tags
-; label-separator = |
 
 ; Symbol of current layout
 ; Available tokens:
@@ -226,22 +223,16 @@ label-floating = F
 ;   %name%
 
 ; focused = Active tag on focused monitor
-; label-focused = 󰪥
 label-focused-background = #505054
-label-focused-foreground = ${colors.foreground}
 label-focused-underline=
 label-focused-padding = 3
 
 ; unfocused = Inactive tag on any monitor
-; label-unfocused = 󰪥
 label-unfocused-padding = 3
 label-unfocused-background = #38383c
 
 ; visible = Active tag on unfocused monitor
-; label-visible = 󰝦
-label-visible-background = ${colors.background}
-label-visible-foreground = ${colors.foreground}
-label-visible-underline =
+label-visible-background = #38383c
 label-visible-padding = 3
 
 ; urgent = Tag with urgency hint set
