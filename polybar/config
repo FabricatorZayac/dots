@@ -244,7 +244,7 @@ label-urgent-padding = 3
 ; This can be set to an empty string to hide empty tags
 ; label-empty = "󰧟"
 label-empty-background = ${colors.background}
-;label-empty-foreground = ${colors.color4}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 3
 
 [module/date]
