@@ -2,11 +2,35 @@ startup_message off
 #binds
 escape s-space
 
+unbind a
+unbind C-a
+unbind C-A
+unbind C-b
+unbind c
+unbind C-c
+unbind C-f
+unbind C-i
+unbind C-K
+unbind C-p
+unbind C-m
+unbind C-n
+unbind C-r
+unbind C-s
+unbind S
+unbind C-S
+unbind C-u
+unbind C-V
+unbind C-w
+unbind C-x
+unbind exclam
+unbind C-exclam
+unbind C-apostrophe
 unbind Return
 unbind C-Return
 
 bind s-r restart
 bind Return exec alacritty
+bind d exec dmenu_run
 
 bind k focusup
 bind j focusdown

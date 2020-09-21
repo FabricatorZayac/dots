@@ -41,6 +41,9 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # >>>>>>> 8ed4033
 source ~/gitpackages/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
+pfetch
+
+#auto startx on tty1
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
 fi
