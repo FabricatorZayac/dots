@@ -74,6 +74,16 @@ format-prefix = " "
 format-padding = 2
 label = %percentage_used%%
 
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-padding = 2
+
+label-connected =  %essid%
+
 [module/eth]
 type = internal/network
 interface = enp0s25
@@ -85,16 +95,6 @@ format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
-
-[module/wlan]
-type = internal/network
-interface = wlp3s0
-interval = 3.0
-
-format-connected = <label-connected>
-format-connected-padding = 2
-
-label-connected =  %essid%
 
 [module/battery]
 type = internal/battery
