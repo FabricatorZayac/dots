@@ -19,6 +19,7 @@ compinit
 
 alias scim=sc-im
 alias ls='ls --color=auto'
+alias vi=vim
 #alias batcat='cat /sys/class/power_supply/BAT0/capacity'
 
 #setfont Cyr_a8x16
