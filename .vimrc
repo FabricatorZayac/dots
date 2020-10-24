@@ -28,6 +28,9 @@ nnoremap ; :
 
 nmap <F8> :TagbarToggle<CR>
 
+"AUTOCMD
+autocmd InsertEnter,InsertLeave * set cul!
+
 "SNIPPETS
 nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
 
