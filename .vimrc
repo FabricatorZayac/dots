@@ -38,8 +38,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
-Plug 'kmyk/brainfuck-highlight.vim'
-Plug 'cespare/vim-toml'
 
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
