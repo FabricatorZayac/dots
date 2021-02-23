@@ -15,6 +15,7 @@ bindkey -v
 alias ls="ls --color=auto"
 alias l="ls -lh --color=auto"
 alias la="ls -lA --color=auto"
+alias mpv="mpv --save-position-on-quit"
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -25,9 +26,6 @@ compinit
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
-#alias batcat='cat /sys/class/power_supply/BAT0/capacity'
 
 #setfont Cyr_a8x16
 #sudo loadkeys ru
