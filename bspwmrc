@@ -3,10 +3,10 @@
 #AUTOSTART
 sxhkd &
 sudo illum-d &
-picom &
+picom --no-fading-openclose &
 polybarstart &
 # feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg &
-feh --bg-fill ~/pix/wallpapers/wp2931013.jpg
+feh --bg-fill ~/pix/wallpapers/from-mars-to-sirius-16x10.jpg
 wmname LG3D &
 syncthing -no-browser &
 xsetroot -cursor_name left_ptr &
@@ -32,3 +32,8 @@ bspc rule -a Surf state=tiled
 bspc rule -a Emacs state=tiled desktop='^8'
 bspc rule -a Zathura state=tiled
 bspc rule -a zoom desktop='^5'
+bspc rule -a Telegram desktop='^2'
+bspc rule -a TelegramDesktop desktop='^2'
+bspc rule -a dogecoin-qt desktop='^8'
+
+telegram &
