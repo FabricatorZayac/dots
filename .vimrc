@@ -29,7 +29,7 @@ nnoremap ; :
 nmap <F8> :TagbarToggle<CR>
 
 "SNIPPETS
-nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
+nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>4jl
 nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(
 
 "PLUGINS
@@ -42,6 +42,7 @@ Plug 'davidhalter/jedi-vim'
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
 Plug 'cespare/vim-toml'
+Plug 'justinmk/vim-syntax-extra'
 
 "tpope plugins
 Plug 'tpope/vim-speeddating'
