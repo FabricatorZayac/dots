@@ -1,16 +1,21 @@
 #! /bin/sh
 
-#AUTOSTART
+# AUTOSTART
 sxhkd &
 sudo illum-d &
 picom --no-fading-openclose &
 polybarstart &
-# feh --bg-fill ~/pix/wallpapers/monogatari/ylm9S4U.jpg &
-feh --bg-fill ~/pix/wallpapers/from-mars-to-sirius-16x10.jpg
 wmname LG3D &
-syncthing -no-browser &
 xsetroot -cursor_name left_ptr &
 
+telegram &
+# syncthing -no-browser &
+
+# BACKGROUNDS
+# feh --bg-fill ~/pix/wallpapers/from-mars-to-sirius-16x10.jpg
+xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio --no-resume-playback --panscan=1.0 ~/pix/wallpapers/animation/amesame.mp4 &
+
+# BSPWM STUFF
 bspc monitor -d term mpd browser games V VI VII VIII IX
 
 bspc config border_width			2
@@ -36,4 +41,3 @@ bspc rule -a Telegram desktop='^2'
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a dogecoin-qt desktop='^8'
 
-telegram &
