@@ -4,9 +4,10 @@
 sxhkd &
 sudo illum-d &
 picom --no-fading-openclose &
-polybarstart &
 wmname LG3D &
 xsetroot -cursor_name left_ptr &
+polybarstart &
+lazywal-cli -r
 
 telegram &
 # syncthing -no-browser &
