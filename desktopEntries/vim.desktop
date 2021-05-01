@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Vim
+Comment=Text Editor
+Exec=alacritty -e /usr/bin/vim %f
+Terminal=false
+Categories=Viewer;IDE;
+MimeType=text/plain;
