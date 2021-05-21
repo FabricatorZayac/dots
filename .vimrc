@@ -28,6 +28,9 @@ nnoremap ; :
 
 nmap <F8> :TagbarToggle<CR>
 
+"AUTOCMD
+autocmd InsertEnter,InsertLeave * set cul!
+
 "SNIPPETS
 nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>4jl
 nnoremap !<tab> :-1read ~/.vim/.skeleton.html<CR>7j
@@ -54,6 +57,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
 "COLORSCHEMES
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 
 "POWERLINE
