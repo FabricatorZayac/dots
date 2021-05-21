@@ -2,14 +2,16 @@
 
 # AUTOSTART
 sxhkd &
-sudo illum-d &
 picom --no-fading-openclose &
 wmname LG3D &
 xsetroot -cursor_name left_ptr &
 polybarstart &
+lxpolkit &
+
+killall xwinwrap
+sleep  0.1
 lazywal-cli -r
 
-telegram &
 # syncthing -no-browser &
 
 # BSPWM STUFF
@@ -38,3 +40,4 @@ bspc rule -a Telegram desktop='^2'
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a dogecoin-qt desktop='^8'
 
+telegram &
