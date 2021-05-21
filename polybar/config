@@ -47,7 +47,7 @@ font-2 = Font Awesome 5 Brands:pixelsize=11;3
 font-3 = Font Awesome 5 Free Regular:pixelsize=10;3
 font-4 = Font Awesome 5 Free Solid:style=Solid:pixelsize:1;3
 
-modules-left = bspwm
+modules-left = bspwm dwm
 modules-right = filesystem fshome battery xkeyboard volume wlan eth cpu memory temp date
 
 scroll-up = bspwm-desknext
@@ -160,6 +160,58 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 3
 
 label-empty = %icon% 
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 3
+
+[module/dwm]
+type = internal/dwm
+format = <label-tags> <label-layout>
+
+enable-tags-click = true
+enable-layout-click = true
+enable-layout-scroll = true
+layout-scroll-wrap = true
+layout-scroll-reverse = false
+; If enable-layout-click = true, clicking the layout symbol will switch to this layout
+secondary-layout-symbol = [M]
+
+; Symbol of current layout
+; Available tokens:
+;   %symbol%
+label-layout = %symbol%
+label-layout-padding = 3
+label-layout-foreground = ${colors.foreground}
+label-layout-background = ${colors.background}
+
+; Text to show when currently focused window is floating
+label-floating = F
+
+; States: focused, unfocused, visible, urgent, empty
+; Available tokens:
+;   %name%
+
+; focused = Active tag on focused monitor
+label-focused-background = #505054
+label-focused-underline=
+label-focused-padding = 3
+
+; unfocused = Inactive tag on any monitor
+label-unfocused-padding = 3
+label-unfocused-background = #38383c
+
+; visible = Active tag on unfocused monitor
+label-visible-background = #38383c
+label-visible-padding = 3
+
+; urgent = Tag with urgency hint set
+label-urgent = %name%
+label-urgent-background = #aeaeae
+label-urgent-padding = 3
+
+; empty = Tags with no windows assigned
+; This can be set to an empty string to hide empty tags
+; label-empty = "󰧟"
+label-empty-background = ${colors.background}
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 3
 
