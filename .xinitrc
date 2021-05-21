@@ -10,3 +10,7 @@ setxkbmap -option compose:ralt
 # feh --bg-fill ~/pix/wallpapers/from-mars-to-sirius-16x10.jpg
 
 exec bspwm
+# exec i3
+# exec ratpoison
+# exec dwm
+# exec awesome
