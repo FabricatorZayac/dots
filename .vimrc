@@ -30,14 +30,17 @@ nmap <F8> :TagbarToggle<CR>
 
 "SNIPPETS
 nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>4jl
-nnoremap <leader>pybt :-1read ~/.vim/.pybot.py<CR>10jf(
+nnoremap !<tab> :-1read ~/.vim/.skeleton.html<CR>7j
 
 "PLUGINS
 call plug#begin('~/.vim/plugged')
 
+Plug 'k-cybulski/vim-commonmark-preview'
 Plug 'scrooloose/nerdtree'
 Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
+Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag'
 
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'
