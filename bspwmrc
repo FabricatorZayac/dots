@@ -38,6 +38,6 @@ bspc rule -a Zathura state=tiled
 bspc rule -a zoom desktop='^5'
 bspc rule -a Telegram desktop='^2'
 bspc rule -a TelegramDesktop desktop='^2'
-bspc rule -a dogecoin-qt desktop='^8'
+bspc rule -a Tk state=floating
 
 telegram &
