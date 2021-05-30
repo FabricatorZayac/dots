@@ -38,7 +38,7 @@ nnoremap !<tab> :-1read ~/.vim/.skeleton.html<CR>7j
 "PLUGINS
 call plug#begin('~/.vim/plugged')
 
-Plug 'k-cybulski/vim-commonmark-preview'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 Plug 'scrooloose/nerdtree'
 Plug 'justmao945/vim-clang'
 Plug 'davidhalter/jedi-vim'
@@ -83,5 +83,7 @@ hi Normal ctermbg=NONE
 "VARS
 let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
+" let g:instant_markdown_browser = "firefox --new-window"
+let g:instant_markdown_browser = "surf"
 
 command! MakeTags !ctags -R
