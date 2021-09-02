@@ -306,7 +306,7 @@ format-padding = 2
 format-background = #444448
 
 ; Path to sensor
-hwmon-path = /sys/class/hwmon/hwmon0/temp1_input
+hwmon-path = /sys/class/hwmon/hwmon1/temp1_input
 
 base-temperature = 20
 warn-temperature = 80

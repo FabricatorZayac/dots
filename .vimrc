@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'k-cybulski/vim-commonmark-preview'
+Plug 'ludovicchabant/vim-gutentags'
 
 "SYNTAX
 Plug 'kmyk/brainfuck-highlight.vim'

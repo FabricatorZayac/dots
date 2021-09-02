@@ -4,6 +4,9 @@
 sxhkd &
 polybarstart &
 wmname LG3D &
+setxkbmap -option caps:escape &
+setxkbmap us,ru -option grp:alt_shift_toggle &
+setxkbmap -option compose:ralt &
 
 bspc monitor -d term mpd browser games V VI VII VIII IX
 
