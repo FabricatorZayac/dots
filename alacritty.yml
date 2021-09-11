@@ -320,7 +320,7 @@ key_bindings:
   - { key: Home,                          chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: End,                           chars: "\x1bOF",   mode: AppCursor   }
   - { key: End,                           chars: "\x1b[F",   mode: ~AppCursor  }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize              }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize             }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize             }
   - { key: Slash,    mods: Control,       action: ResetFontSize                }
 
