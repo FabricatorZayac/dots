@@ -34,6 +34,12 @@ super + F9
 ctrl + super + shift + F4
 	~/dox/dots/dmenu/dmenu_shutdown
 
+# Control_R
+# 	python ~/src/autoclicker/click.py
+
+# KP_Enter
+# 	pkill python
+
 #
 # bspwm hotkeys
 #
@@ -88,7 +94,7 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
+super + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
