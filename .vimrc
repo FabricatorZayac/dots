@@ -27,6 +27,9 @@ inoremap {<CR> {<CR>}<ESC>O
 nnoremap ; :
 
 nmap <F8> :TagbarToggle<CR>
+nmap <F5> :NERDTreeToggle<CR>
+
+xnoremap nl :s/^\s*\zs/\=(line('.') - line("'<")+1).'. '<CR>
 
 "AUTOCMD
 autocmd InsertEnter,InsertLeave * set cul!
@@ -79,7 +82,6 @@ call plug#end()
 colorscheme gruvbox
 set bg=dark
 hi Normal ctermbg=NONE
-
 "VARS
 let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
