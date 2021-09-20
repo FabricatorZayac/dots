@@ -18,6 +18,7 @@ compinit
 [[ $- != *i* ]] && return
 
 alias scim=sc-im
+alias mutt=neomutt
 alias ls='ls --color=auto'
 #alias batcat='cat /sys/class/power_supply/BAT0/capacity'
 
