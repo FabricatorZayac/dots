@@ -44,7 +44,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 Plug 'scrooloose/nerdtree'
 Plug 'justmao945/vim-clang'
-Plug 'davidhalter/jedi-vim'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 
@@ -52,6 +51,8 @@ Plug 'alvan/vim-closetag'
 Plug 'kmyk/brainfuck-highlight.vim'
 Plug 'cespare/vim-toml'
 Plug 'justinmk/vim-syntax-extra'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'tikhomirov/vim-glsl'
 
 "tpope plugins
 Plug 'tpope/vim-speeddating'
