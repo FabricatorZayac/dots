@@ -1,5 +1,9 @@
 #! /bin/sh
 
+setxkbmap -option caps:escape
+setxkbmap -layout us,ru -option grp:alt_shift_toggle
+setxkbmap -option compose:ralt
+
 # AUTOSTART
 sxhkd &
 picom --no-fading-openclose &
@@ -8,7 +12,8 @@ xsetroot -cursor_name left_ptr &
 polybarstart &
 lxpolkit &
 
-lazywal-cli -r
+# lazywal-cli -r
+feh --bg-fill ~/pix/wallpapers/marcus-kistas-we-lost-the-sea-departure-songs.jpg
 
 # syncthing -no-browser &
 
@@ -38,7 +43,8 @@ bspc rule -a Telegram desktop='^2'
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a discord desktop='^2'
 bspc rule -a Tk state=floating
-
+bspc rule -a com.artyom.game.Main state=floating
+bspc rule -a net.streamcraft.launcher.a4 state=floating
 discord&
 telegram-desktop&
 # jetbrains-toolbox&
