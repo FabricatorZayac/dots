@@ -38,7 +38,6 @@ nnoremap <leader>cpp :-1read ~/.vim/.skeleton.cpp<CR>6jl
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'k-cybulski/vim-commonmark-preview'
 Plug 'ludovicchabant/vim-gutentags'
 
 "SYNTAX
