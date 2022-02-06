@@ -12,6 +12,10 @@ super + backslash
 super + shift + backslash
 	firefox --private-window
 
+# Emacs
+super + e
+	emacs
+
 # program launcher
 super + d
 	dmenu_run -h 25 -fn 'Cantarell-11'
