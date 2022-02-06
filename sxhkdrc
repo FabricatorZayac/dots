@@ -35,10 +35,7 @@ super + {F8, F7}
 
 # brightness
 XF86MonBrightness{Up,Down}
-	sudo light -{A,U} 2
-super + ctrl + shift + {Up, Down}
 	backlight -{i,d}
-	# sudo light -{A,U} 2
 
 # Shutdown
 XF86PowerOff
