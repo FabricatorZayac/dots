@@ -6,7 +6,7 @@ setxkbmap -option compose:ralt
 
 # AUTOSTART
 sxhkd &
-picom --no-fading-openclose &
+# picom --no-fading-openclose &
 wmname LG3D &
 xsetroot -cursor_name left_ptr &
 polybarstart &
