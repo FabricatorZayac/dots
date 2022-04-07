@@ -13,7 +13,7 @@ super + shift + backslash
 	firefox --private-window
 
 # Emacs
-super + e
+super + shift + e
 	emacs
 
 # program launcher
@@ -150,3 +150,11 @@ super + ctrl + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# funny macros
+#
+
+# ¯\_(ツ)_/¯
+super + alt + s
+	printf "¯\_(ツ)_/¯" | xclip -i -selection clipboard

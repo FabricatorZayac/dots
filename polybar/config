@@ -59,6 +59,7 @@ height = 25
 fixed-center = true
 override-redirect = true
 wm-restack = bspwm
+enable-ipc = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
