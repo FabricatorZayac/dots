@@ -4,6 +4,7 @@ filetype plugin on
 set relativenumber number
 set incsearch
 set omnifunc=syntaxcomplete#Complete
+set clipboard=unnamedplus
 
 set encoding=utf-8
 set path+=**
