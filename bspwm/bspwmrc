@@ -5,7 +5,7 @@ setxkbmap -layout us,ru,ua -option grp:alt_shift_toggle
 setxkbmap -option compose:ralt
 
 # AUTOSTART
-sxhkd &
+sxhkd ~/.config/bspwm/bspwm.sxhkdrc &
 picom --no-fading-openclose &
 wmname LG3D &
 xsetroot -cursor_name left_ptr &
@@ -29,7 +29,6 @@ bspc config gapless_monocle     	true
 bspc config top_padding				25
 bspc config focus_follows_pointer	true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^3'
 bspc rule -a firefox desktop='^3'
 bspc rule -a mplayer2 state=floating
@@ -46,6 +45,7 @@ bspc rule -a Tk state=floating
 bspc rule -a matplotlib state=floating
 bspc rule -a Toplevel state=floating
 bspc rule -a com.artyom.game.Main state=floating
+bspc rule -a chatterino state=floating
 discord&
 telegram-desktop&
 # jetbrains-toolbox&

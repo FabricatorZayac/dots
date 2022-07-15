@@ -3,14 +3,6 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
-# setxkbmap -option caps:escape
-# setxkbmap -layout us,ru -option grp:alt_shift_toggle
-# setxkbmap -option compose:ralt
+export WM=i3
 
-# feh --bg-fill ~/pix/wallpapers/from-mars-to-sirius-16x10.jpg
-
-exec bspwm
-# exec i3
-# exec ratpoison
-# exec dwm
-# exec awesome
+exec $WM

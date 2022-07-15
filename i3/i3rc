@@ -1,0 +1,18 @@
+#! /bin/sh
+
+setxkbmap -option caps:escape
+setxkbmap -layout us,ru,ua -option grp:alt_shift_toggle
+setxkbmap -option compose:ralt
+
+sxhkd ~/.config/i3/i3.sxhkdrc &
+# picom --no-fading-openclose &
+wmname LG3D &
+xsetroot -cursor_name left_ptr &
+polybarstart &
+lxpolkit &
+
+# lazywal-cli -r
+feh --bg-fill ~/pix/wallpapers/marcus-kistas-we-lost-the-sea-departure-songs.jpg
+
+i3-msg 'workspace 2; exec /usr/bin/telegram-desktop' &
+i3-msg 'workspace 2; exec /usr/bin/discord' &

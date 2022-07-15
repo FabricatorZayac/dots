@@ -1,0 +1,64 @@
+super + Escape
+    pkill -USR1 -x "sxhkd /home/zayac/.config/i3/i3.sxhkdrc"
+
+#
+# i3 bindings
+#
+
+# exit
+super + alt + F4
+    i3-msg exit
+
+# reload/restart
+super + shift + {c, r}
+    i3-msg {reload, restart}
+
+# focus
+super + {h, j, k, l}
+    i3-msg focus {left, down, up, right}
+
+# move focused window
+super + shift + {h, j, k, l}
+    i3-msg move {left, down, up, right}
+
+# kill
+super + q
+    i3-msg kill
+
+# fullscreen toggle
+super + f
+    i3-msg fullscreen toggle
+
+# split direction
+super + w ; {s, v}
+    i3-msg split {v, h}
+
+# container layouts
+# m for monocle, t for tiling
+super + {s, m, t}
+    i3-msg layout {stacking, tabbed, toggle split}
+
+# make floating
+super + shift + space
+    i3-msg floating toggle
+
+# workspace switching
+super + {1-9}
+    i3-msg workspace number {1-9}
+
+# move container to workspace
+super + shift + {1-9}
+    i3-msg move container to workspace number {1-9}
+
+# focus the parent container
+super + a
+    i3-msg focus parent
+
+# resize mode
+super + r : {h, j, k, l}
+    i3-msg resize {
+        shrink width,
+        grow height,
+        shrink height,
+        grow width
+    } 10 px
