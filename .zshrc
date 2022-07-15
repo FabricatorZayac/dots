@@ -3,6 +3,7 @@ export WINEPREFIX=~/hdd/.wine
 export LANG=en_US.UTF-8
 export STEAM_COMPAT_DATA_PATH=~/hdd/Games/protonpfx
 export PATH=$PATH:~/.local/bin/
+export EDITOR=nvim
 
 pfetch
 
