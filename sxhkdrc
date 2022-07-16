@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# reload
+super + Escape
+    pkill -USR1 -x sxhkd
+
 # terminal emulator
 super + Return
 	alacritty

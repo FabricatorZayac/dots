@@ -1,6 +1,3 @@
-super + Escape
-    pkill -USR1 -x "sxhkd /home/zayac/.config/bspwm/bspwm.sxhkdrc"
-
 #
 # bspwm hotkeys
 #
