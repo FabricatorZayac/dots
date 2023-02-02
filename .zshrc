@@ -1,8 +1,10 @@
+export R2MOD_INSTALL_DIR=~/hdd/SteamLibrary/steamapps/common/Risk\ of\ Rain\ 2
+export R2MOD_COMPAT_DIR=~/hdd/SteamLibrary/steamapps/compatdata/632360
 export TERM="xterm-256color"
 export WINEPREFIX=~/hdd/.wine
 export LANG=en_US.UTF-8
 export STEAM_COMPAT_DATA_PATH=~/hdd/Games/protonpfx
-export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:~/.local/bin/:~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/:~/.cargo/bin/
 export EDITOR=nvim
 
 pfetch
@@ -41,3 +43,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # >>>>>>> 8ed4033
 source ~/gitpackages/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.packwiz_comp.zsh

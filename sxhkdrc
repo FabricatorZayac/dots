@@ -8,29 +8,25 @@ super + Escape
 
 # terminal emulator
 super + Return
-	alacritty
+    alacritty
 
 #Web browser
 super + backslash
-	firefox
+    firefox
 super + shift + backslash
-	firefox --private-window
+    firefox --private-window
 
 # Emacs
 super + shift + e
-	emacs
+    emacs
 
 # program launcher
 super + d
-	dmenu_run -h 25 -fn 'Cantarell-11'
-
-# make sxhkd reload its configuration files:
-# super + Escape
-# 	pkill -USR1 -x sxhkd
+    dmenu_run -h 25 -fn 'Cantarell-11'
 
 # screenshot
 Print
-	scrot
+    scrot
 
 ctrl + Print
     scrot -s
@@ -39,13 +35,26 @@ ctrl + Print
 super + {F8, F7}
     amixer -D pulse sset Master {5%+,5%-} unmute
 super + F9
-	amixer -D pulse sset Master toggle
+    amixer -D pulse sset Master toggle
 
 # Shutdown
 ctrl + super + shift + F4
-	~/dox/dots/dmenu/dmenu_shutdown
+    ~/dox/dots/dmenu/dmenu_shutdown
+
+# Wacom brightness
+ctrl + shift + {Up,Down}
+    ~/hdd/src/scripts/wacom_brightness.sh -{i,d}
 
 # ¯\_(ツ)_/¯
 super + alt + s
-	printf "¯\_(ツ)_/¯" | xclip -i -selection clipboard
+    printf "¯\_(ツ)_/¯" | xclip -i -selection clipboard
 
+# boomer
+super + F1
+    boomer
+
+super + F12
+    xdotool click --repeat 1000 --delay 500 1
+
+super + shift + F12
+    pkill xdotool

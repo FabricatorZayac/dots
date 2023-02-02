@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "poweroff\nreboot" | dmenu -fn 'Cantarell-14' -c -l 2 -bw 2 | sh
+echo -e "poweroff\nreboot\nsystemctl suspend" | dmenu -fn 'Cantarell-14' -c -l 3 -bw 2 | sh

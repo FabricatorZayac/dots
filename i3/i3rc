@@ -1,18 +1,27 @@
 #! /bin/sh
 
+export WM=i3
+
 setxkbmap -option caps:escape
 setxkbmap -layout us,ru,ua -option grp:alt_shift_toggle
 setxkbmap -option compose:ralt
 
-sxhkd ~/.config/i3/i3.sxhkdrc &
-# picom --no-fading-openclose &
+# monitor positions
+# xrandr --output DVI-D-0 --mode 1680x1050 --pos 0x0    --rotate normal \
+#        --output HDMI-0  --mode 1920x1080 --pos 1680x0 --rotate normal
+
+picom &
 wmname LG3D &
 xsetroot -cursor_name left_ptr &
 polybarstart &
 lxpolkit &
+sxhkd ~/.config/i3/i3.sxhkdrc &
 
 # lazywal-cli -r
 feh --bg-fill ~/pix/wallpapers/marcus-kistas-we-lost-the-sea-departure-songs.jpg
+
+# for the tablet to only draw on itself
+xsetwacom set $(xsetwacom --list devices | grep stylus | sed "s/.*id: //" | sed "s/\t.*//") MapToOutput HEAD-1
 
 i3-msg 'workspace 2; exec /usr/bin/telegram-desktop' &
 i3-msg 'workspace 2; exec /usr/bin/discord' &

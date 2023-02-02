@@ -4,12 +4,12 @@
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
-font pango:monospace 8
+# font pango:monospace 8
 
 # rc file
 exec_always ~/.config/i3/i3rc
 
-set $refresh_i3status killall -SIGUSR1 i3status
+# set $refresh_i3status killall -SIGUSR1 i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -25,6 +25,16 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
+set $ws10 "10"
+
+# workpaces default screen
+workspace $ws1 output DVI-D-0
+workspace $ws2 output DVI-D-0
+workspace $ws3 output DVI-D-0
+workspace $ws4 output DVI-D-0
+
+workspace $ws9 output HDMI-0
+workspace $ws10 output HDMI-0
 
 # window rules
 assign [class="firefox"] 3
@@ -33,5 +43,5 @@ assign [class="discord"] 2
 
 # decor
 gaps inner 4
-gaps top 25
+# gaps top 25
 default_border pixel 2

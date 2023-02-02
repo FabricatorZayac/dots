@@ -18,9 +18,13 @@ super + {h, j, k, l}
 super + shift + {h, j, k, l}
     i3-msg move {left, down, up, right}
 
-# kill
+# close window
 super + q
     i3-msg kill
+
+# kill window
+super + shift + q
+    xdotool getwindowfocus windowkill
 
 # fullscreen toggle
 super + f
@@ -40,12 +44,12 @@ super + shift + space
     i3-msg floating toggle
 
 # workspace switching
-super + {1-9}
-    i3-msg workspace number {1-9}
+super + {1-9, 0}
+    i3-msg workspace number {1-9, 10}
 
 # move container to workspace
-super + shift + {1-9}
-    i3-msg move container to workspace number {1-9}
+super + shift + {1-9, 0}
+    i3-msg move container to workspace number {1-9, 10}
 
 # focus the parent container
 super + a
